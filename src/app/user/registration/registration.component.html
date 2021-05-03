@@ -1,0 +1,85 @@
+<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+<mat-grid-list cols="2" rowHeight="1:0">
+    <mat-grid-tile class="left">
+        <div class="row">
+            <div class="col-md-6">
+                <form [formGroup]="service.formModel" autocomplete="off" (ngSubmit)="onSubmit()" class="form">
+                    <h1><mat-icon id="account-logo">account_circle</mat-icon> Register Account</h1>
+    
+                    <h4 >Fill in the registration form.</h4>
+    
+                    <hr class="divider mb-5">
+    
+                    <div class="form-group required">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input matInput placeholder="Username" formControlName="UserName" required>
+                            <mat-error *ngIf="checkError('UserName', 'required')">Username is required</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input matInput placeholder="Username" formControlName="Email" required>
+                            <mat-error *ngIf="checkError('Email', 'required')">Email is required</mat-error>
+                            <mat-error *ngIf="checkError('Email', 'email')">Email formatting is incorrect</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Full Name</mat-label>
+                            <input matInput placeholder="Full Name" formControlName="FullName" required>
+                            <mat-error *ngIf="checkError('FullName', 'required')">Full Name is required</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input matInput placeholder="Password" formControlName="Password" type="password" required>
+                            <mat-error *ngIf="checkError('Password', 'required')">Password is required</mat-error>
+                            <mat-error *ngIf="checkError('Password', 'minlength')">Min. of 5 characters</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Confirm Password</mat-label>
+                            <input matInput placeholder="Confirm Password" formControlName="ConfirmPassword" type="password" required >
+                            <mat-error *ngIf="checkError('ConfirmPassword', 'confirmedValidator')">Confirm Password does not match Password</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-lg btn-block md-elevation-z2" [disabled]="!service.formModel.valid">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="right" style="background: url('assets/images/dynamicBlue.jpg');">
+        <img src="assets/images/logo.png" alt="logo" id="logo">
+        <h1 class="company-title">LOGO</h1>
+        <h2 class="header md-5">Welcome Page</h2>
+        <p class="subtitle">Register your account to get started.</p>
+        <!-- <owl-carousel-o [options]="customOptions" class="owl-nav disabled">
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img src="https://via.placeholder.com/600/92c952" alt="img 1">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img src="https://via.placeholder.com/600/771796" alt="img 2">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img src="https://via.placeholder.com/600/24f355" alt="img 3">
+              </div>
+            </ng-template>
+          </owl-carousel-o> -->
+        <p class="websiteurl">www.website.com</p>
+    </mat-grid-tile>
+</mat-grid-list>
+
+

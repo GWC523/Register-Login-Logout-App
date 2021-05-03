@@ -1,0 +1,90 @@
+body {
+    height: 100vh;
+    position: relative;
+    padding: 0;
+}
+mat-grid-tile {
+    padding: 0px !important;
+    height: 100vh;
+}
+
+.left {
+    left: 0;
+    padding: 0%;
+    font-size: 12px;
+    margin-left: -10%;
+}  
+
+.right {
+    right: 0;
+    padding: 0%;
+}
+
+.form {
+    padding: 0%;
+    width: 300%;
+    margin-left: 10%;
+    
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.divider {
+    border-top: 5px solid #2596ff;
+    border-collapse: collapse;
+    width: 100px;
+    margin-left: 0%;
+}
+
+mat-form-field{
+    padding: 0%;
+    width:250px !important;
+}
+
+#account-logo {
+    color: #0188f0;
+}
+
+.header {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.websiteurl {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 3px;
+    right: 30px;
+    bottom: 20px;
+}
+
+#logo {
+    width: 60px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.company-title {
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: white;
+    position: absolute;
+    top: 42px;
+    left: 110px;
+}
+
+.subtitle {
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: white;
+    position: absolute;
+    top: 380px;
+}
+
