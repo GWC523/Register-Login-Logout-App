@@ -1,6 +1,5 @@
-<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-<mat-grid-list cols="2" rowHeight="1:0">
-    <mat-grid-tile class="left">
+<div class="form-card">
+    <mat-card appMaterialElevation>
         <div class="row">
             <div class="col-md-6">
                 <form [formGroup]="service.formModel" autocomplete="off" (ngSubmit)="onSubmit()" class="form">
@@ -53,33 +52,11 @@
                         </div>
                     </div>
                 </form>
+                <div class="switch">
+                    Already have an account? <button mat-button class="login-btn">Login</button>
+                </div>
             </div>
         </div>
-    </mat-grid-tile>
-    <mat-grid-tile class="right" style="background: url('assets/images/dynamicBlue.jpg');">
-        <img src="assets/images/logo.png" alt="logo" id="logo">
-        <h1 class="company-title">LOGO</h1>
-        <h2 class="header md-5">Welcome Page</h2>
-        <p class="subtitle">Register your account to get started.</p>
-        <!-- <owl-carousel-o [options]="customOptions" class="owl-nav disabled">
-            <ng-template carouselSlide>
-              <div class="slide">
-                <img src="https://via.placeholder.com/600/92c952" alt="img 1">
-              </div>
-            </ng-template>
-            <ng-template carouselSlide>
-              <div class="slide">
-                <img src="https://via.placeholder.com/600/771796" alt="img 2">
-              </div>
-            </ng-template>
-            <ng-template carouselSlide>
-              <div class="slide">
-                <img src="https://via.placeholder.com/600/24f355" alt="img 3">
-              </div>
-            </ng-template>
-          </owl-carousel-o> -->
-        <p class="websiteurl">www.website.com</p>
-    </mat-grid-tile>
-</mat-grid-list>
-
+    </mat-card>
+</div>
 

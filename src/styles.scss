@@ -14,4 +14,11 @@ button[type=submit].btn{
     box-shadow: 5px 5px #65d9f7;
 }
 
+@media (max-width: 900px) {
+    
+    button[type=submit].btn{
+        width: 210%;
+    }   
+}
+
 body { margin: 0; }

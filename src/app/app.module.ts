@@ -22,6 +22,7 @@ import { UserService } from './shared/user.service';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LoginComponent } from './user/login/login.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MaterialElevationDirective } from 'src/app/material-elevation.directive';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     UserComponent,
     RegistrationComponent,
     LoginComponent,
+    MaterialElevationDirective
   ],
   imports: [
     BrowserModule,

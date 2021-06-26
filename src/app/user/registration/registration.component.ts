@@ -12,7 +12,6 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 
 export class RegistrationComponent implements OnInit {
-
   
   constructor(public service: UserService, private toastr: ToastrService) { }
 

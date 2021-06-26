@@ -22,9 +22,8 @@ mat-grid-tile {
 
 .form {
     padding: 0%;
-    width: 300%;
-    margin-left: 10%;
-    
+    width: 1000%;
+    margin-left: 15%;
 }
 
 h1 {
@@ -88,3 +87,42 @@ mat-form-field{
     top: 380px;
 }
 
+mat-card {
+    width: 250%;
+    margin-left: 100%;
+    border-collapse: collapse;
+    border-radius: 2em;
+}
+
+
+
+@media (max-width: 900px) {
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    mat-card {
+        width: 100%;
+        margin-left: 30%;
+    }
+
+    .form {
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    mat-form-field{
+        width:200px !important;
+    }
+}
+
+.switch {
+    letter-spacing: 0.5px;
+    width: 1000%;
+    margin-left: 15%;
+}
+
+.login-btn {
+    color: #2ec8f3;
+}
